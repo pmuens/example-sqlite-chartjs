@@ -1,0 +1,53 @@
+%table.table.table-bordered.table-striped.tablesorter
+  %thead
+    %tr
+      %th
+        No.
+      %th
+        1
+      %th
+        2
+      %th
+        3
+      %th
+        4
+      %th
+        5
+      %th
+        6
+      %th
+        7
+      %th
+        8
+      %th
+        9
+      %th
+        10
+  %tbody
+    - if @datasets.any?
+      - @datasets.each_with_index do |dataset, index|
+        %tr
+          %td
+            = "##{index+1}"
+          %td
+            = dataset.one
+          %td
+            = dataset.two
+          %td
+            = dataset.three
+          %td
+            = dataset.four
+          %td
+            = dataset.five
+          %td
+            = dataset.six
+          %td
+            = dataset.seven
+          %td
+            = dataset.eight
+          %td
+            = dataset.nine
+          %td
+            = dataset.ten
+    - else
+      There is no data available to display
