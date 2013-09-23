@@ -8,7 +8,7 @@
     = javascript_include_tag 'application'
     = csrf_meta_tags
     %title
-      Example SQLite Chart.js
+      = @title ? "#{@title} - Example SQLite Chart.js" : 'Example SQLite Chart.js'
   %body(style='margin-top: 60px;')
     = render 'layouts/navigation'
     .container
