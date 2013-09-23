@@ -31,7 +31,7 @@ class ExamplesController < ApplicationController
 
   private
     def fetch_datasets
-      count = params[:count] ? params[:count] : 1000
+      count = params[:count] ? params[:count] : 500
       @datasets = Dataset.limit(count) # FIXME: Not the safties way to parse the params into the query (SQLInjection Alert)
     end
 end
