@@ -9,7 +9,7 @@
     = csrf_meta_tags
     %title
       = @title ? "#{@title} - Example SQLite Chart.js" : 'Example SQLite Chart.js'
-  %body(style='margin-top: 60px;')
+  %body
     = render 'layouts/navigation'
     .container
       = yield

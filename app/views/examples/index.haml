@@ -1,24 +1,29 @@
-%table.table.table-bordered.table-striped.tablesorter
-  %thead
-    %tr
-      %th
-        Chart
-  %tbody
-    %tr
-      %td
-        = link_to 'Line', line_path
-    %tr
-      %td
-        = link_to 'Bar', bar_path
-    %tr
-      %td
-        = link_to 'Radar', radar_path
-    %tr
-      %td
-        = link_to 'Polar area', polar_area_path
-    %tr
-      %td
-        = link_to 'Pie', pie_path
-    %tr
-      %td
-        = link_to 'Doughnut', doughnut_path
+.span12
+  %ul.breadcrumb
+    %li.active
+      Overview
+.span6.centered_span
+  %table.table.table-bordered.table-striped.tablesorter
+    %thead
+      %tr
+        %th
+          Chart examples
+    %tbody
+      %tr
+        %td
+          = link_to 'Line', line_path
+      %tr
+        %td
+          = link_to 'Bar', bar_path
+      %tr
+        %td
+          = link_to 'Radar', radar_path
+      %tr
+        %td
+          = link_to 'Polar area', polar_area_path
+      %tr
+        %td
+          = link_to 'Pie', pie_path
+      %tr
+        %td
+          = link_to 'Doughnut', doughnut_path

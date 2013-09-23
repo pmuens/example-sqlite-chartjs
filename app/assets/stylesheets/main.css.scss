@@ -1,0 +1,15 @@
+body { 
+  padding-top: 60px;
+}
+
+@media (max-width: 980px) {
+  body {
+    padding-top: 0px;
+  }
+}
+
+.centered_span {
+  float: none !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
