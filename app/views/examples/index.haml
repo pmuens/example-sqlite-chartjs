@@ -71,3 +71,13 @@
     %br
     %strong
       ?no_table=X
+.span6.centered_span
+  .well
+    %strong
+      Available APIs:
+    %br
+    There are XML and JSON APIs available. Just append .json or .xml to the url
+    %br
+    = link_to 'localhost:3000/pie.json', pie_path(format: :json)
+    %br
+    = link_to 'localhost:3000/doughnut.xml', doughnut_path(format: :xml)
