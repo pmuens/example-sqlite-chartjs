@@ -23,6 +23,8 @@ gem 'twitter-bootstrap-rails', '~> 2.2.8'
 
 gem 'jquery-tablesorter', '~> 1.5.0'
 
+gem 'chartjs-rails', '~> 0.1'
+
 gem 'jbuilder', '~> 1.2'
 
 group :doc do
