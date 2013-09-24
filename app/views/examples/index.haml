@@ -27,3 +27,11 @@
       %tr
         %td
           = link_to 'Doughnut', doughnut_path
+.span6.centered_span
+  .well
+    There is a total of
+    %br
+    %strong
+      = @datasets.count
+    %br
+    row(s) in the database

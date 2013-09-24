@@ -3,6 +3,7 @@ class ExamplesController < ApplicationController
 
   def index
     @title = 'Overview of examples'
+    @datasets = Dataset.all
   end
 
   def line
