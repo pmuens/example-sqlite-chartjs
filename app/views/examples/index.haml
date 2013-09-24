@@ -6,27 +6,51 @@
   %table.table.table-bordered.table-striped.tablesorter
     %thead
       %tr
-        %th
+        %th(colspan='3')
           Chart examples
     %tbody
       %tr
         %td
           = link_to 'Line', line_path
+        %td
+          = link_to 'Line (no Chart)', line_path(no_chart: 1)
+        %td
+          = link_to 'Line (no Table)', line_path(no_table: 1)
       %tr
         %td
           = link_to 'Bar', bar_path
+        %td
+          = link_to 'Bar (no Chart)', bar_path(no_chart: 1)
+        %td
+          = link_to 'Bar (no Table)', bar_path(no_table: 1)
       %tr
         %td
           = link_to 'Radar', radar_path
+        %td
+          = link_to 'Radar (no Chart)', radar_path(no_chart: 1)
+        %td
+          = link_to 'Radar (no Table)', radar_path(no_table: 1)
       %tr
         %td
           = link_to 'Polar area', polar_area_path
+        %td
+          = link_to 'Polar area (no Chart)', polar_area_path(no_chart: 1)
+        %td
+          = link_to 'Polar area (no Table)', polar_area_path(no_table: 1)
       %tr
         %td
           = link_to 'Pie', pie_path
+        %td
+          = link_to 'Pie (no Chart)', pie_path(no_chart: 1)
+        %td
+          = link_to 'Pie (no Table)', pie_path(no_table: 1)
       %tr
         %td
           = link_to 'Doughnut', doughnut_path
+        %td
+          = link_to 'Doughnut (no Chart)', doughnut_path(no_chart: 1)
+        %td
+          = link_to 'Doughnut (no Table)', doughnut_path(no_table: 1)
 .span6.centered_span
   .well
     There is a total of
@@ -35,3 +59,15 @@
       = @datasets.count
     %br
     row(s) in the database
+.span6.centered_span
+  .well
+    Available GET-Parameters:
+    %br
+    %strong
+      ?count=X
+    %br
+    %strong
+      ?no_chart=X
+    %br
+    %strong
+      ?no_table=X
