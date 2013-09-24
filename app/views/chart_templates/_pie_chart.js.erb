@@ -1,0 +1,13 @@
+<script>
+  var data = [
+    <% datasets.each_with_index do |dataset, index| %>
+      {
+        value: <%= dataset.one %>,
+        color: '#<%= '%06x' % (rand * 0xffffff) %>'
+      }
+      <%= index < datasets.size-1 ? ', ' : '' %>
+    <% end %>
+  ]
+
+  pieChart = new Chart($('#canvas').get(0).getContext('2d')).Pie(data)
+</script>
