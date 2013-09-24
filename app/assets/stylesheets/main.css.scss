@@ -39,3 +39,10 @@ body {
 .well {
   text-align: center;
 }
+
+.brand {
+  color: #DDDDDD !important;
+  &:hover {
+    color: #FFFFFF !important;
+  }
+}
