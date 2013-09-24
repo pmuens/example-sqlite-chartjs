@@ -1,7 +1,7 @@
 %table.table.table-bordered.table-striped.tablesorter
   %thead
     %tr
-      %th
+      %th.hidden-phone.hidden-tablet
         No.
       %th
         1
@@ -27,7 +27,7 @@
     - if @datasets.any?
       - @datasets.each_with_index do |dataset, index|
         %tr
-          %td
+          %td.hidden-phone.hidden-tablet
             = "##{index+1}"
           %td
             = dataset.one
