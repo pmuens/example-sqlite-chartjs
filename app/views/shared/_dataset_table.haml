@@ -1,30 +1,30 @@
-%table.table.table-bordered.table-striped.tablesorter
-  %thead
-    %tr
-      %th.hidden-phone.hidden-tablet
-        No.
-      %th
-        1
-      %th
-        2
-      %th
-        3
-      %th
-        4
-      %th
-        5
-      %th
-        6
-      %th
-        7
-      %th
-        8
-      %th
-        9
-      %th
-        10
-  %tbody
-    - if @datasets.any?
+- if @datasets.any?
+  %table.table.table-bordered.table-striped.tablesorter
+    %thead
+      %tr
+        %th.hidden-phone.hidden-tablet
+          No.
+        %th
+          1
+        %th
+          2
+        %th
+          3
+        %th
+          4
+        %th
+          5
+        %th
+          6
+        %th
+          7
+        %th
+          8
+        %th
+          9
+        %th
+          10
+    %tbody
       - @datasets.each_with_index do |dataset, index|
         %tr
           %td.hidden-phone.hidden-tablet
@@ -49,5 +49,7 @@
             = dataset.nine
           %td
             = dataset.ten
-    - else
+- else
+  .alert.alert-error
+    %strong
       There is no data available to display
