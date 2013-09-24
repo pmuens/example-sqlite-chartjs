@@ -1,5 +1,5 @@
 class ExamplesController < ApplicationController
-  before_filter :fetch_datasets
+  before_filter :fetch_datasets, except: [:index]
 
   def index
     @title = 'Overview of examples'
@@ -31,7 +31,7 @@ class ExamplesController < ApplicationController
 
   private
     def fetch_datasets
-      count = params[:count] ? params[:count] : 500
+      count = params[:count] ? params[:count] : 5
       @datasets = Dataset.limit(count) # FIXME: Not the safties way to parse the params into the query (SQLInjection Alert)
     end
 end
