@@ -4,9 +4,9 @@
     datasets : [
       <% datasets.each_with_index do |dataset, index| %>
         {
-          fillColor : 'rgba(<%= rand(0..255) %>, <%= rand(0..255) %>, <%= rand(0..255) %>, <%= rand(0.0..1.0) %>)',
-          strokeColor : 'rgba(<%= rand(0..255) %>, <%= rand(0..255) %>, <%= rand(0..255) %>, <%= rand(0.0..1.0) %>)',
-          pointColor : 'rgba(<%= rand(0..255) %>, <%= rand(0..255) %>, <%= rand(0..255) %>, <%= rand(0.0..1.0) %>)',
+          fillColor : 'rgba(<%= rand(0..255) %>, <%= rand(0..255) %>, <%= rand(0..255) %>, <%= rand(0.1..1.0) %>)',
+          strokeColor : 'rgba(<%= rand(0..255) %>, <%= rand(0..255) %>, <%= rand(0..255) %>, <%= rand(0.1..1.0) %>)',
+          pointColor : 'rgba(<%= rand(0..255) %>, <%= rand(0..255) %>, <%= rand(0..255) %>, <%= rand(0.1..1.0) %>)',
           pointStrokeColor : '#FFFFFF',
           data : [
             <%= dataset.one %>,
