@@ -7,4 +7,8 @@
     %li.active
       Line Demo
 .span12
+  .chart
+    %canvas#canvas{height: '450', width: '1170'}
+= render 'chart_templates/line_chart.js.erb', datasets: @datasets
+.span12
   = render 'shared/dataset_table'
