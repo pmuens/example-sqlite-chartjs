@@ -20,9 +20,7 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails', '~> 3.0.4'
 gem 'haml-rails', '~> 0.4'
 
-gem 'therubyracer', '~> 0.12.0'
-gem 'less-rails', '~> 2.4.2'
-gem 'twitter-bootstrap-rails', '~> 2.2.8'
+gem 'bootstrap-sass', '~> 2.3.2.2'
 
 gem 'jquery-tablesorter', '~> 1.5.0'
 
