@@ -2,7 +2,7 @@
   %ul.breadcrumb
     %li.active
       Overview
-.span6.centered_span
+.span6.offset3
   %table.table.table-bordered.table-striped.tablesorter
     %thead
       %tr
@@ -51,7 +51,7 @@
           = link_to 'Doughnut (no Chart)', doughnut_path(no_chart: 1)
         %td
           = link_to 'Doughnut (no Table)', doughnut_path(no_table: 1)
-.span6.centered_span
+.span6.offset3
   .well
     There is a total of
     %br
@@ -59,7 +59,7 @@
       = @datasets.count
     %br
     row(s) in the database
-.span6.centered_span
+.span6.offset3
   .well
     %strong
       Available GET-Parameters:
@@ -69,7 +69,7 @@
     ?no_chart=X
     %br
     ?no_table=X
-.span6.centered_span
+.span6.offset3
   .well
     %strong
       Available APIs:
